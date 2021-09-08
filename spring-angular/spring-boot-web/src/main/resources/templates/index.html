@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"> </title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+<h1 class="color-rojo" th:text="${titulo}"> </h1>
+<h2 class="color-azul">Bienvenido en ambiente de pruebas MVC inserta las rutas indicadas:</h2>
+<ul class="color-verde">
+<li>Ej: http://localhost:8080/string -------Insertando algun valor de texto</li>
+<li>Ej: http://localhost:8080/params/ ------Ve los valores por consulta</li>
+<li>Ej: http://localhost:8080/app/perfil ------- Muestra el perfil principal</li>
+<li>Ej: http://localhost:8080/app/listar --------Muestra los usuarios que están inscritos desde la vista </li></ul>
+<img th:src="@{/images/spring.png}"></img>
+</body>
+</html>
